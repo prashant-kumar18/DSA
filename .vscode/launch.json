@@ -1,0 +1,560 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch BinaryTreeQues",
+            "request": "launch",
+            "mainClass": "BinaryTreeQues",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch AllIndicisReursion12",
+            "request": "launch",
+            "mainClass": "AllIndicisReursion12",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch AllPaths13",
+            "request": "launch",
+            "mainClass": "AllPaths13",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arrange",
+            "request": "launch",
+            "mainClass": "Arrange",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinarySearchQues",
+            "request": "launch",
+            "mainClass": "BinarySearchQues",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch BuyAndSell17",
+            "request": "launch",
+            "mainClass": "BuyAndSell17",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChocolateDis30",
+            "request": "launch",
+            "mainClass": "ChocolateDis30",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Combinations13",
+            "request": "launch",
+            "mainClass": "Combinations13",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch CommonElementRow10",
+            "request": "launch",
+            "mainClass": "CommonElementRow10",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch CommonElements19",
+            "request": "launch",
+            "mainClass": "CommonElements19",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountInversion16",
+            "request": "launch",
+            "mainClass": "CountInversion16",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountSubArray",
+            "request": "launch",
+            "mainClass": "CountSubArray",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Duplicate11",
+            "request": "launch",
+            "mainClass": "Duplicate11",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fact22",
+            "request": "launch",
+            "mainClass": "Fact22",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch FracKnapSack",
+            "request": "launch",
+            "mainClass": "FracKnapSack",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch GameExecution14",
+            "request": "launch",
+            "mainClass": "GameExecution14",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch GoldMine15",
+            "request": "launch",
+            "mainClass": "GoldMine15",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch InversionMergeSort",
+            "request": "launch",
+            "mainClass": "InversionMergeSort",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch JobSeq",
+            "request": "launch",
+            "mainClass": "JobSeq",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch KadaneAlgoLargestConSubSum13",
+            "request": "launch",
+            "mainClass": "KadaneAlgoLargestConSubSum13",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch KnapSackOneZero20",
+            "request": "launch",
+            "mainClass": "KnapSackOneZero20",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch KnapSackUnbounded21",
+            "request": "launch",
+            "mainClass": "KnapSackUnbounded21",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch KnightTour11",
+            "request": "launch",
+            "mainClass": "KnightTour11",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch KthMaxAndMin3",
+            "request": "launch",
+            "mainClass": "KthMaxAndMin3",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch KthMaxElement9",
+            "request": "launch",
+            "mainClass": "KthMaxElement9",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch LargestConSubArray8",
+            "request": "launch",
+            "mainClass": "LargestConSubArray8",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch LargestsubSeq24",
+            "request": "launch",
+            "mainClass": "LargestsubSeq24",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch LexicalOrder",
+            "request": "launch",
+            "mainClass": "LexicalOrder",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestConSeq",
+            "request": "launch",
+            "mainClass": "LongestConSeq",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestSumEqualToZero",
+            "request": "launch",
+            "mainClass": "LongestSumEqualToZero",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxNoOne4",
+            "request": "launch",
+            "mainClass": "MaxNoOne4",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxNoPair12",
+            "request": "launch",
+            "mainClass": "MaxNoPair12",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxProductSub23",
+            "request": "launch",
+            "mainClass": "MaxProductSub23",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MedianInSorted3",
+            "request": "launch",
+            "mainClass": "MedianInSorted3",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeIntervals14",
+            "request": "launch",
+            "mainClass": "MergeIntervals14",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeWithoutExtraSpace12",
+            "request": "launch",
+            "mainClass": "MergeWithoutExtraSpace12",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinAndMax2",
+            "request": "launch",
+            "mainClass": "MinAndMax2",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinCoinMaxAmount",
+            "request": "launch",
+            "mainClass": "MinCoinMaxAmount",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinHeight9",
+            "request": "launch",
+            "mainClass": "MinHeight9",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinJump10",
+            "request": "launch",
+            "mainClass": "MinJump10",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinMergeOpToPalin34",
+            "request": "launch",
+            "mainClass": "MinMergeOpToPalin34",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinPlatformNeeded",
+            "request": "launch",
+            "mainClass": "MinPlatformNeeded",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Module",
+            "request": "launch",
+            "mainClass": "Module",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MoreThanNByK25",
+            "request": "launch",
+            "mainClass": "MoreThanNByK25",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch MoveNegativeAside5",
+            "request": "launch",
+            "mainClass": "MoveNegativeAside5",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch NMeetingOneRoom",
+            "request": "launch",
+            "mainClass": "NMeetingOneRoom",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch NQueen10",
+            "request": "launch",
+            "mainClass": "NQueen10",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Permutation7",
+            "request": "launch",
+            "mainClass": "Permutation7",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch PermutationDiff19",
+            "request": "launch",
+            "mainClass": "PermutationDiff19",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pow",
+            "request": "launch",
+            "mainClass": "Pow",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch RecAndBac",
+            "request": "launch",
+            "mainClass": "RecAndBac",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoveDuplicateFromSorted",
+            "request": "launch",
+            "mainClass": "RemoveDuplicateFromSorted",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoveExtraSpaces18",
+            "request": "launch",
+            "mainClass": "RemoveExtraSpaces18",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch RepeatAndMissing",
+            "request": "launch",
+            "mainClass": "RepeatAndMissing",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseArray1",
+            "request": "launch",
+            "mainClass": "ReverseArray1",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Rotate90Degree8",
+            "request": "launch",
+            "mainClass": "Rotate90Degree8",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch RotateArray7",
+            "request": "launch",
+            "mainClass": "RotateArray7",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch SearchElement2",
+            "request": "launch",
+            "mainClass": "SearchElement2",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch SearchPair7",
+            "request": "launch",
+            "mainClass": "SearchPair7",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch SmallestSubArrayGreaterThanK",
+            "request": "launch",
+            "mainClass": "SmallestSubArrayGreaterThanK",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortMatrix5",
+            "request": "launch",
+            "mainClass": "SortMatrix5",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch SpiralPrint1",
+            "request": "launch",
+            "mainClass": "SpiralPrint1",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch StairPath3",
+            "request": "launch",
+            "mainClass": "StairPath3",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubEqualToZero21",
+            "request": "launch",
+            "mainClass": "SubEqualToZero21",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubsetOfArray27",
+            "request": "launch",
+            "mainClass": "SubsetOfArray27",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sudoku16",
+            "request": "launch",
+            "mainClass": "Sudoku16",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch TargetSum9",
+            "request": "launch",
+            "mainClass": "TargetSum9",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreeNoSum",
+            "request": "launch",
+            "mainClass": "ThreeNoSum",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreeWayParti32",
+            "request": "launch",
+            "mainClass": "ThreeWayParti32",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Transpose",
+            "request": "launch",
+            "mainClass": "Transpose",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch TrapRainWater29",
+            "request": "launch",
+            "mainClass": "TrapRainWater29",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch Trie",
+            "request": "launch",
+            "mainClass": "Trie",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch TripletSum28",
+            "request": "launch",
+            "mainClass": "TripletSum28",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch TwoSum",
+            "request": "launch",
+            "mainClass": "TwoSum",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch UnionIntersection6",
+            "request": "launch",
+            "mainClass": "UnionIntersection6",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZeroOneTwoSort4",
+            "request": "launch",
+            "mainClass": "ZeroOneTwoSort4",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch countEqualPair18",
+            "request": "launch",
+            "mainClass": "countEqualPair18",
+            "projectName": "Programs_12cb8408"
+        },
+        {
+            "type": "java",
+            "name": "Launch maxRectangle6",
+            "request": "launch",
+            "mainClass": "maxRectangle6",
+            "projectName": "Programs_12cb8408"
+        }
+    ]
+}
