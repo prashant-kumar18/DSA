@@ -1,23 +1,15 @@
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
-import java.util.Queue;
 import java.util.TreeMap;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import javax.management.Query;
-import javax.xml.crypto.Data;
 
 public class BinaryTreeQues {
     public static void main(String[] args) {
         Node root = new Node(1);
 
         root.left = new Node(2);
-        root.right = new Node(2);
+        root.right = new Node(3);
         root.left.left = new Node(4);
-        root.right.right = new Node(4);
+        root.right.right = new Node(5);
         // preorder(root);
         // System.out.println();
         // inorder(root);
@@ -40,8 +32,8 @@ public class BinaryTreeQues {
         // }
         // topView(root);
         // bottomView(root);
-        System.out.println(mirrorOrNot(root, root));
-
+//        System.out.println(mirrorOrNot(root, root));
+        buringTree(root, 3);
     }
 
     static void topView(Node root) {
@@ -128,12 +120,80 @@ public class BinaryTreeQues {
 
     static void constructTreeFromInAndPost() {
     }
-
-    static void symmetricBinaryTree() {
-    }
-
     static void flattenBinaryTreeToLinkedList() {
     }
+
+    static void buringTree(Node root, int target) {
+
+        LinkedList<Node> l = new LinkedList<>();
+        Node targetNode = buringTreeUtil(root, target);
+        l.add(targetNode);
+        int size = l.size();
+
+        targetNode.v = true;
+        int time = 0;
+        while (size != 0) {
+
+            size = l.size();
+            for (int i = 0; i < size; i++) {
+
+                Node temp = l.remove();
+
+                if (temp.left != null && !temp.left.v) {
+                    temp.left.v = true;
+                    l.add(temp.left);
+                }
+                if (temp.right != null && !temp.right.v) {
+                    temp.parent.v = true;
+                    l.add(temp.right);
+                }
+
+                if (temp.parent != null && !temp.parent.v) {
+                    temp.parent.v = true;
+                    l.add(temp.parent);
+                }
+
+            }
+            time++;
+        }
+
+        System.out.println(time);
+    }
+
+    static Node buringTreeUtil(Node tree, int target) {
+        LinkedList<Node> l = new LinkedList<>();
+
+        l.add(tree);
+        int size = l.size();
+        Node targetNode = null;
+        while (size != 0) {
+
+            size = l.size();
+            for (int i = 0; i < size; i++) {
+
+                Node temp = l.removeFirst();
+
+                if (temp.left != null) {
+                    temp.left.parent = temp;
+                    l.add(temp.left);
+                }
+                if (temp.right != null) {
+                    temp.right.parent = temp;
+                    l.add(temp.right);
+                }
+
+                if (temp.data == target) {
+                    targetNode = temp;
+
+                }
+            }
+
+
+        }
+
+        return targetNode;
+    }
+
 
     static boolean mirrorOrNot(Node root1, Node root2) {
         if (root1 == null || root2 == null) {
@@ -196,7 +256,7 @@ public class BinaryTreeQues {
     }
 
     static Map<Integer, LinkedList<Integer>> verticalOrderTrav(Node root, Map<Integer, LinkedList<Integer>> m,
-            int level) {
+                                                               int level) {
 
         if (root == null) {
             return m;
@@ -211,7 +271,7 @@ public class BinaryTreeQues {
     }
 
     static Map<Integer, LinkedList<Integer>> levelOrderTrav(Node root, Map<Integer, LinkedList<Integer>> m,
-            int level) {
+                                                            int level) {
 
         if (root == null) {
             return m;
@@ -258,6 +318,7 @@ public class BinaryTreeQues {
         if (root == null) {
             return 0;
         }
+        String s="[1234]*";
 
         return Math.max(1 + height(root.left), 1 + height(root.right));
 
@@ -292,17 +353,19 @@ public class BinaryTreeQues {
 
 }
 
-class Node {
+class Node extends NodeExtention {
     Node left;
     Node right;
     int data;
     int level;
 
     Node(int data) {
+
         this.data = data;
         left = null;
         right = null;
         level = 0;
+
     }
 
     Node(int data, int level) {
@@ -310,5 +373,16 @@ class Node {
         left = null;
         right = null;
         level = 0;
+    }
+}
+
+class NodeExtention {
+
+    Node parent;
+    boolean v;
+
+    NodeExtention() {
+        v = false;
+        parent = null;
     }
 }
