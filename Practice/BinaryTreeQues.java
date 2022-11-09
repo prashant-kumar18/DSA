@@ -1,15 +1,15 @@
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class BinaryTreeQues {
-    public static void main(String[] args) {
-        Node root = new Node(1);
+    static boolean isBal = true;
 
-        root.left = new Node(2);
-        root.right = new Node(3);
-        root.left.left = new Node(4);
-        root.right.right = new Node(5);
+    public static void main(String[] args) {
+//        Node root = new Node(1);
+//
+//        root.left = new Node(2);
+//        root.right = new Node(3);
+//        root.right.left = new Node(4);
+//        root.right.right = new Node(5);
         // preorder(root);
         // System.out.println();
         // inorder(root);
@@ -33,7 +33,115 @@ public class BinaryTreeQues {
         // topView(root);
         // bottomView(root);
 //        System.out.println(mirrorOrNot(root, root));
-        buringTree(root, 3);
+//        buringTree(root, 3);
+//        String s = "1+2";
+//        diameter(root);
+//        Node root = new Node(1);
+//        root.left = new Node(2);
+//        root.right = new Node(3);
+//        root.left.left = new Node(4);
+//        root.left.right = new Node(5);
+//        root.left.left.right = new Node(8);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
+
+        Node root2 = new Node(1);
+        root2.left = new Node(2);
+        root2.right = new Node(3);
+        root2.left.left = new Node(4);
+        root2.left.right = new Node(5);
+//isBalancedHeight(root);
+//        System.out.println(isBal);
+
+        System.out.println(twoTreeIdentical(root, root2));
+    }
+
+    static int isBalancedHeight(Node root) {
+        if (root == null) return 0;
+
+        int l = 1 + isBalancedHeight(root.left);
+        int r = 1 + isBalancedHeight(root.right);
+
+        if (l - r > 1) isBal = false;
+        return Math.max(l, r);
+
+    }
+
+    public static Node populatenbr(Node root) {
+        if (root == null || root.left == null) {
+            return root;
+        }
+        root.left.nbr = root.right;
+        if (root.nbr != null) {
+
+            System.out.println("hell");
+            root.right.nbr = root.nbr.left;
+        }
+        populatenbr(root.left);
+        populatenbr(root.right);
+        return root;
+
+    }
+
+
+    static void rootToNode() {
+    }
+
+    static void maxWidth() {
+    }
+
+    static boolean twoTreeIdentical(Node root1, Node root2) {
+
+        if (root1 == null || root2 == null) {
+            return root1 == root2;
+        }
+        if (root1.data != root2.data) return false;
+
+        return twoTreeIdentical(root1.left, root2.left) && twoTreeIdentical(root1.right, root2.right);
+
+    }
+
+    static void zigZag(Node root) {
+        Deque<Node> q = new LinkedList<>();
+        q.add(root);
+        boolean goingRight=true;
+        while (q.size() != 0) {
+
+            int size=q.size();
+            for (int i = 0; i < size; i++) {
+
+                if(goingRight)
+                Node temp=q.ad;
+
+                if(temp.left!=null)
+                    q.add(temp.left);
+                if(temp.right!=null)
+                    q.add(temp.right);
+
+            }
+        }
+
+    }
+
+    static void boundaryTrav() {
+    }
+
+    static void maxPathSum() {
+    }
+
+    static void constructTreeFromInAndPre() {
+    }
+
+    static void constructTreeFromInAndPost() {
+    }
+
+    static void flattenBinaryTreeToLinkedList() {
+    }
+
+    static void childrenSumProperty() {
     }
 
     static void topView(Node root) {
@@ -95,32 +203,6 @@ public class BinaryTreeQues {
 
         l.entrySet().forEach((i -> System.out.println(i.getValue())));
 
-    }
-
-    static void rootToNode() {
-    }
-
-    static void maxWidth() {
-    }
-
-    static void twoTreeIdentical() {
-    }
-
-    static void zigZag() {
-    }
-
-    static void boundaryTrav() {
-    }
-
-    static void maxPathSum() {
-    }
-
-    static void constructTreeFromInAndPre() {
-    }
-
-    static void constructTreeFromInAndPost() {
-    }
-    static void flattenBinaryTreeToLinkedList() {
     }
 
     static void buringTree(Node root, int target) {
@@ -194,7 +276,6 @@ public class BinaryTreeQues {
         return targetNode;
     }
 
-
     static boolean mirrorOrNot(Node root1, Node root2) {
         if (root1 == null || root2 == null) {
 
@@ -204,13 +285,10 @@ public class BinaryTreeQues {
             return false;
         }
 
-        return (mirrorOrNot(root1.left, root2.right) &&
-                mirrorOrNot(root1.right, root2.left));
+        return (mirrorOrNot(root1.left, root2.right) && mirrorOrNot(root1.right, root2.left));
 
     }
 
-    static void childrenSumProperty() {
-    }
 
     static void preorder(Node root) {
 
@@ -255,8 +333,7 @@ public class BinaryTreeQues {
 
     }
 
-    static Map<Integer, LinkedList<Integer>> verticalOrderTrav(Node root, Map<Integer, LinkedList<Integer>> m,
-                                                               int level) {
+    static Map<Integer, LinkedList<Integer>> verticalOrderTrav(Node root, Map<Integer, LinkedList<Integer>> m, int level) {
 
         if (root == null) {
             return m;
@@ -270,8 +347,7 @@ public class BinaryTreeQues {
         return m;
     }
 
-    static Map<Integer, LinkedList<Integer>> levelOrderTrav(Node root, Map<Integer, LinkedList<Integer>> m,
-                                                            int level) {
+    static Map<Integer, LinkedList<Integer>> levelOrderTrav(Node root, Map<Integer, LinkedList<Integer>> m, int level) {
 
         if (root == null) {
             return m;
@@ -318,17 +394,22 @@ public class BinaryTreeQues {
         if (root == null) {
             return 0;
         }
-        String s="[1234]*";
+        String s = "[1234]*";
 
         return Math.max(1 + height(root.left), 1 + height(root.right));
 
     }
 
     static void diameter(Node root) {
-
+        System.out.println(diemeterUtil(root.left, 0) + diemeterUtil(root.right, 0));
     }
 
-    static void isBalancedHeight(Node root) {
+    static int diemeterUtil(Node root, int sum) {
+        if (root == null) {
+            return sum;
+        }
+
+        return Math.max(diemeterUtil(root.left, sum + 1), diemeterUtil(root.right, sum + 1));
 
     }
 
@@ -359,11 +440,14 @@ class Node extends NodeExtention {
     int data;
     int level;
 
+    Node nbr;
+
     Node(int data) {
 
         this.data = data;
         left = null;
         right = null;
+        nbr = null;
         level = 0;
 
     }
